@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">vdk</string>
+    <string name="tocdo">Speed</string>
+    <string name="wifi">Wifi</string>
+    <string name="pin">Solar batterry</string>
+
+</resources>
