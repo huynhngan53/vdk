@@ -1,132 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity">
 
     <RelativeLayout
-        android:id="@+id/nentren"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/backgroudtren">
-
-        <ImageView
-            android:id="@+id/logo"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="50dp"
-            android:background="@android:color/transparent"
-            android:src="@drawable/xewifi1"></ImageView>
-
-        <LinearLayout
-            android:id="@+id/icon"
+            android:id="@+id/nentren"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/logo"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical">
+            android:background="@drawable/backgroudtren">
 
-            <LinearLayout
+        <ImageView
+                android:id="@+id/logo"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+
+                android:background="@android:color/transparent"
+                android:src="@drawable/xe"></ImageView>
+
+        <LinearLayout
+                android:id="@+id/icon"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="3">
+                android:layout_below="@id/logo"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
 
-                <RelativeLayout
+            <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1">
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
 
                     <ImageView
-                        android:id="@+id/nuttron"
-                        android:layout_width="16dp"
-                        android:layout_height="16dp"
-                        android:layout_centerHorizontal="true"
-                        android:background="@drawable/nuttron"></ImageView>
+                            android:id="@+id/nuttron"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/nuttron"></ImageView>
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1">
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
 
                     <TextView
-                        android:id="@+id/httocdo"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:text="40"
-                        android:textColor="@color/chutrang"
-                        android:textStyle="bold"></TextView>
+                            android:id="@+id/httocdo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="40"
+                            android:textSize="18sp"
+                            android:textColor="@color/chutrang"
+                            android:textStyle="bold"></TextView>
 
 
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1">
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
 
                     <TextView
-                        android:id="@+id/htpin"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:text="70"
-                        android:textColor="@color/chutrang"
-                        android:textStyle="bold"></TextView>
+                            android:id="@+id/htpin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="70"
+                            android:textSize="18sp"
+                            android:textColor="@color/chutrang"
+                            android:textStyle="bold"></TextView>
 
                 </RelativeLayout>
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="3">
-
-                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1">
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="30dp"
+                    android:weightSum="3">
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:text="@string/wifi"
-                        android:textColor="@color/chutrang"
-                        android:textSize="15sp"></TextView>
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/wifi"
+                            android:textColor="@color/chutrang"
+                            android:textSize="15sp"></TextView>
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1">
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:text="@string/tocdo"
-                        android:textColor="@color/chutrang"></TextView>
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/tocdo"
+                            android:textColor="@color/chutrang"></TextView>
 
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1">
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:text="@string/pin"
-                        android:textColor="@color/chutrang"></TextView>
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/pin"
+                            android:textColor="@color/chutrang"></TextView>
                 </RelativeLayout>
             </LinearLayout>
 
@@ -134,41 +137,55 @@
     </RelativeLayout>
 
     <Button
-        android:id="@+id/tren"
-        android:layout_width="85dp"
-        android:layout_height="85dp"
-        android:layout_below="@id/nentren"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
-        android:background="@drawable/nut"
-        android:gravity="center"></Button>
+            android:id="@+id/tren"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_below="@id/nentren"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/nut"
+            android:gravity="center"></Button>
 
     <Button
-        android:id="@+id/trai"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_below="@id/tren"
-        android:layout_toLeftOf="@id/tren"
-        android:background="@drawable/trai"
-        android:gravity="left"></Button>
+            android:id="@+id/trai"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/tren"
+            android:layout_toLeftOf="@id/tren"
+            android:background="@drawable/trai"
+            android:gravity="left"></Button>
 
 
     <Button
-        android:id="@+id/phai"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_below="@id/tren"
-        android:layout_marginTop="3dp"
-        android:layout_toRightOf="@id/tren"
-        android:background="@drawable/phaii"></Button>
+            android:id="@+id/phai"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/tren"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/tren"
+            android:background="@drawable/phaii"></Button>
 
     <Button
-        android:id="@+id/duoi"
-        android:layout_width="85dp"
-        android:layout_height="85dp"
-        android:layout_below="@id/trai"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/duoi"
-        android:gravity="left"></Button>
+            android:id="@+id/duoi"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_below="@id/trai"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/duoi"
+            android:gravity="left"></Button>
+    <Switch android:layout_width="wrap_content"
+            android:showText="true"
+            android:id="@+id/onoff"
+            android:textOff="OFF"
+            android:textOn="ON"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:switchTextAppearance="@style/myswitch"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/duoi">
+
+    </Switch>
 
 </RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "691869644744",
+    "project_id": "doan-bbb2d",
+    "storage_bucket": "doan-bbb2d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:691869644744:android:bf3f35bcd7d383230cf2fd",
+        "android_client_info": {
+          "package_name": "com.example.vdk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "691869644744-p5tsol8sc375l4ahbic11pe31nr53gmq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDk5jAgK3C-aq2PfMAOpy3IWRUqNZ0i3I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "691869644744-p5tsol8sc375l4ahbic11pe31nr53gmq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
