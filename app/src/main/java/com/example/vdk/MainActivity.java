@@ -16,6 +16,11 @@ public class MainActivity extends AppCompatActivity {
     TextView speed, battery;
     Switch onoff;
 
+    // hàm chuyển nhị phân sang thập phân
+    private int convertBinaryToDecimal(String binaryString) {
+        return Integer.parseInt(binaryString, 2);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
                     wifi.setBackgroundResource(R.drawable.nuttrondo);
                 }
             }
+
             public void onCancelled(DatabaseError databaseError) {
             }
         });
@@ -50,15 +56,28 @@ public class MainActivity extends AppCompatActivity {
                 double value = dataSnapshot.getValue(Double.class);
                 speed.setText(String.valueOf(value));
             }
+
             public void onCancelled(DatabaseError databaseError) {
             }
         });
         mDatabase.child("battery").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                double value = dataSnapshot.getValue(Double.class);
-                battery.setText(String.valueOf(value));
+//              nhận thập phân (code cũ)
+//              double value = dataSnapshot.getValue(Double.class);
+//              battery.setText(String.valueOf(value));
+
+//              nhận nhị phân (code mới)
+//              nhị phân phải lưu trên firebase dạng string,
+//              vì lưu dạng number firebase sẽ hiểu là thập phân và tự bỏ đi số 0 đằng trước
+//              lấy chuỗi nhị phân về
+                String value = dataSnapshot.getValue(String.class);
+//              chuyển nhị phân sang thập phân
+                int decimal = convertBinaryToDecimal(value);
+//              hiển thị lên text view
+                battery.setText(String.valueOf(decimal));
             }
+
             public void onCancelled(DatabaseError databaseError) {
             }
         });
