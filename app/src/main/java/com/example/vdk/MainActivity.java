@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     // hàm chuyển nhị phân sang thập phân
     private int convertBinaryToDecimal(String binaryString) {
+
         return Integer.parseInt(binaryString, 2);
     }
 
@@ -45,8 +46,7 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     wifi.setBackgroundResource(R.drawable.nuttrondo);
                 }
-            }
-
+            } 
             public void onCancelled(DatabaseError databaseError) {
             }
         });
@@ -97,13 +97,13 @@ public class MainActivity extends AppCompatActivity {
         trai.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mDatabase.child("move").setValue("left");
+                mDatabase.child("move_lr").setValue("left");
             }
         });
         phai.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mDatabase.child("move").setValue("right");
+                mDatabase.child("move_lr").setValue("right");
             }
         });
         stop.setOnClickListener(new View.OnClickListener() {

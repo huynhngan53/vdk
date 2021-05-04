@@ -17,7 +17,6 @@
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_centerHorizontal="true"
-
             android:background="@android:color/transparent"
             android:src="@drawable/xe"></ImageView>
 
@@ -116,9 +115,7 @@
                         android:layout_centerHorizontal="true"
                         android:text="@string/tocdo"
                         android:textColor="@color/chutrang"></TextView>
-
                 </RelativeLayout>
-
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -136,17 +133,19 @@
         </LinearLayout>
     </RelativeLayout>
 
-    <Button
-        android:id="@+id/tren"
-        android:layout_width="85dp"
-        android:layout_height="85dp"
-        android:layout_below="@id/nentren"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
-        android:background="@drawable/nut"
-        android:gravity="center"></Button>
+   <Button
+    android:id="@+id/tren"
+    android:layout_width="85dp"
+    android:layout_height="85dp"
+    android:layout_below="@id/nentren"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="25dp"
+    android:background="@drawable/nut"
+    android:gravity="center"></Button>
 
-    <Button
+
+
+<Button
         android:id="@+id/trai"
         android:layout_width="80dp"
         android:layout_height="80dp"
@@ -162,7 +161,7 @@
         android:layout_above="@id/duoi"
         android:layout_below="@id/tren"
         android:layout_toLeftOf="@id/phai"
-        android:layout_toRightOf="@id/trai"
+       android:layout_toRightOf="@id/trai"
         android:background="@drawable/stop"
         android:gravity="left"></Button>
 
