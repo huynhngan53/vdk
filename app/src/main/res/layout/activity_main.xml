@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,9 +7,44 @@
     tools:context=".MainActivity">
 
     <RelativeLayout
-        android:id="@+id/nentren"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/tren"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@id/stop"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/nut"
+            android:gravity="center"></Button>
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/stop"
+            android:gravity="left"></Button>
+
+        <Button
+            android:id="@+id/duoi"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/stop"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/duoi"
+            android:gravity="left"></Button>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:background="@drawable/backgroudtren">
 
         <ImageView
@@ -21,181 +56,133 @@
             android:src="@drawable/xe"></ImageView>
 
         <LinearLayout
-            android:id="@+id/icon"
+            android:id="@+id/ll_wifi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/logo"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/ic_baseline_wifi_24" />
+
+            <ImageView
+                android:id="@+id/nuttron"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/nuttron"></ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_speed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_wifi"
             android:layout_marginTop="10dp"
-            android:orientation="vertical">
+            android:gravity="center_vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <ImageView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="3">
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/ic_baseline_speed_24" />
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1">
-
-                    <ImageView
-                        android:id="@+id/nuttron"
-                        android:layout_width="16dp"
-                        android:layout_height="16dp"
-                        android:layout_centerHorizontal="true"
-                        android:background="@drawable/nuttron"></ImageView>
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1">
-
-                    <TextView
-                        android:id="@+id/httocdo"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:text="40"
-                        android:textColor="@color/chutrang"
-                        android:textSize="18sp"
-                        android:textStyle="bold"></TextView>
-
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1">
-
-                    <TextView
-                        android:id="@+id/htpin"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:text="70"
-                        android:textColor="@color/chutrang"
-                        android:textSize="18sp"
-                        android:textStyle="bold"></TextView>
-
-                </RelativeLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/httocdo"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="30dp"
-                android:orientation="horizontal"
-                android:weightSum="3">
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:text="40"
+                android:textColor="@color/chutrang"
+                android:textSize="20sp"
+                android:textStyle="bold"></TextView>
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1">
+        </LinearLayout>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:text="@string/wifi"
-                        android:textColor="@color/chutrang"
-                        android:textSize="15sp"></TextView>
-                </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/ll_battery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_speed"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical">
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/ic_baseline_battery_charging_full_24" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:text="@string/tocdo"
-                        android:textColor="@color/chutrang"></TextView>
-                </RelativeLayout>
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:text="@string/pin"
-                        android:textColor="@color/chutrang"></TextView>
-                </RelativeLayout>
-            </LinearLayout>
-
+            <TextView
+                android:id="@+id/htpin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:text="70"
+                android:textColor="@color/chutrang"
+                android:textSize="20sp"
+                android:textStyle="bold"></TextView>
         </LinearLayout>
     </RelativeLayout>
 
-   <Button
-    android:id="@+id/tren"
-    android:layout_width="85dp"
-    android:layout_height="85dp"
-    android:layout_below="@id/nentren"
-    android:layout_centerHorizontal="true"
-    android:layout_marginTop="25dp"
-    android:background="@drawable/nut"
-    android:gravity="center"></Button>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/trai"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/centerView"
+            android:background="@drawable/trai"
+            android:gravity="left"></Button>
+
+        <View
+            android:id="@+id/centerView"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:id="@+id/phai"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/centerView"
+            android:background="@drawable/phaii"></Button>
+
+        <Switch
+            android:id="@+id/onoff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/centerView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:showText="true"
+            android:switchTextAppearance="@style/myswitch"
+            android:textOff="OFF"
+            android:textOn="ON"></Switch>
+    </RelativeLayout>
+
+</LinearLayout>
 
 
 
-<Button
-        android:id="@+id/trai"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_below="@id/tren"
-        android:layout_toLeftOf="@id/tren"
-        android:background="@drawable/trai"
-        android:gravity="left"></Button>
 
-    <Button
-        android:id="@+id/stop"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_above="@id/duoi"
-        android:layout_below="@id/tren"
-        android:layout_toLeftOf="@id/phai"
-       android:layout_toRightOf="@id/trai"
-        android:background="@drawable/stop"
-        android:gravity="left"></Button>
 
-    <Button
-        android:id="@+id/phai"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_below="@id/tren"
-        android:layout_toRightOf="@id/tren"
-        android:background="@drawable/phaii"></Button>
 
-    <Button
-        android:id="@+id/duoi"
-        android:layout_width="85dp"
-        android:layout_height="85dp"
-        android:layout_below="@id/trai"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/duoi"
-        android:gravity="left"></Button>
 
-    <Switch
-        android:id="@+id/onoff"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/duoi"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:scaleX="2"
-        android:scaleY="2"
-        android:showText="true"
-        android:switchTextAppearance="@style/myswitch"
-        android:textOff="OFF"
-        android:textOn="ON">
 
-    </Switch>
 
-</RelativeLayout>
