@@ -167,7 +167,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/centerView"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="60dp"
             android:scaleX="2"
             android:scaleY="2"
             android:showText="true"
